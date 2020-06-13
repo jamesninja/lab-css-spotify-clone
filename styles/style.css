@@ -6,7 +6,91 @@ Green: #00B172
 White: #FFF
 
 */
+body {
+  margin: 40px;
+}
 
+/*section 1*/
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  /*position: fixed; to change when navbar is fixed*/
+  /*margin-top: 0px; to change when navbar is fixed*/
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+.imgLogo {
+  width: 15%;
+}
+
+/*section 2*/
+#welcome {
+  margin-top: 0px; /*to change when navbar is fixed*/
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px; /*je n'arrive à rendre la div responsive (en % du parent body, le background ne s'adapate pas à la taille de l'écran)*/
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0px;
+}
+
+/*section 3*/
+#offer_on_spotify {
+  display: flex;
+  margin-top: 30px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+  margin: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.offer > img {
+  width: 20%;
+}
+
+.title_offer {
+  color: #00b172;
+}
+
+#user_guide {
+  margin: 10px;
+=======
 .nav {
   display: fixed;
   align-items: start;
